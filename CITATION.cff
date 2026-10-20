@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: "SQL Fragment Corpus"
+message: >-
+  If you use this corpus, please cite it as below, and cite the sources used:
+  they are listed in NOTICE.md.
+type: dataset
+version: "1.0.0"
+date-released: "2026-10-20"
+authors:
+  - family-names: Senellart
+    given-names: Pierre
+    email: pierre@senellart.com
+    affiliation: "DI ENS, ENS, CNRS, PSL University & Inria & Institut Universitaire de France"
+    orcid: "https://orcid.org/0000-0002-7909-5369"
+repository-code: "https://github.com/PierreSenellart/sql-fragment-corpus"
+url: "https://github.com/PierreSenellart/sql-fragment-corpus"
+abstract: >-
+  13,337 SQL queries from six existing sources, each with a PostgreSQL instance
+  it can be run against and a label placing it in a chain of SQL fragments of
+  increasing expressiveness. The sources are the Stack Exchange Data Explorer,
+  the SQLShare query log, dba.stackexchange.com, the BEAVER enterprise
+  warehouse benchmark, TPC-DS and TPC-H; three of them are included here, and
+  for the three whose terms do not permit redistribution the repository
+  provides scripts that rebuild their queries and instances from the originals.
+  Each scenario supplies a schema and literal rows rather than a recipe for
+  generating them. The corpus was assembled to measure which fragment of SQL a
+  provenance system supports; it records no result of such a measurement.
+keywords:
+  - SQL
+  - query corpus
+  - query log
+  - SQL fragments
+  - PostgreSQL
+license:
+  - CC-BY-SA-4.0
+  - MIT

@@ -1,0 +1,11 @@
+# Pinned to the versions the corpus was built with. A different version of either
+# parser can translate or reject a query differently, so a rebuild that is meant
+# to reproduce the shipped scenarios should use these.
+#
+# Only sqlshare_extract.py needs them: it translates T-SQL (sqlglot) and checks
+# each statement against the PostgreSQL grammar (pglast). tpcds_extract.py and
+# tpch_extract.py use the standard library alone.
+#
+# Python 3.10 or later.
+pglast==8.4
+sqlglot==30.18.0

@@ -1,0 +1,9 @@
+# the archives and kits the scripts read, which this repository does not
+# redistribute, and the scenario files they produce
+sqlshare_data_release1.zip
+sqlshare_data_release1/
+sqlshare_scenarios.jsonl
+tpcds_scenarios.jsonl
+tpch_scenarios.jsonl
+__pycache__/
+*.pyc

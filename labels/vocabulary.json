@@ -1,0 +1,52 @@
+[
+ {
+  "label": "F0",
+  "name": "select-project-join-union",
+  "description": "Choose rows, choose columns, join tables, stack results with UNION ALL. The inputs are tables, subqueries in FROM, and WITH. A condition compares a column with another column or with a constant. Nothing drops duplicate rows and nothing computes a new value, so every row of the answer is a row of an input, repeated as many times as the joins produce it."
+ },
+ {
+  "label": "F1",
+  "name": "relational-algebra",
+  "description": "Adds dropping duplicate rows. An SQL answer is a multiset: the same row can occur many times, and F0 keeps every copy. This level adds the constructs that remove copies: DISTINCT, UNION, EXCEPT and INTERSECT, which drop duplicates where UNION ALL keeps them, GROUP BY with no aggregate, and the subquery tests EXISTS, NOT EXISTS, IN and ANY/ALL on a column that cannot be NULL. The name is the usual one: relations in relational algebra are sets, and this is the level at which a query can ask for one."
+ },
+ {
+  "label": "F2",
+  "name": "expressions-over-values",
+  "description": "Adds computing values: arithmetic, string and date functions, CASE, casts – any expression over the columns of one row. The answer still has one row per input row, but a column can hold something computed instead of something stored."
+ },
+ {
+  "label": "F3",
+  "name": "aggregation",
+  "description": "Adds counting rows and combining their values, as the last step of the query: GROUP BY with count, sum, min, max or avg, or one of those over the whole input. The aggregate is returned as it is, and nothing else in the query reads its value."
+ },
+ {
+  "label": "F4",
+  "name": "conditions-on-aggregates",
+  "description": "Adds using an aggregate's value to decide something: HAVING, a condition on an aggregate computed in a subquery, an aggregate of an aggregate, and AND, OR or NOT over subquery tests. The answer is still one row per group, but which groups appear can now depend on an aggregate."
+ },
+ {
+  "label": "F5",
+  "name": "core-sql",
+  "description": "Adds the rest of everyday SQL: outer joins, which produce NULLs the data does not contain; a subquery used as a value, including as an ARRAY; LATERAL; GROUPING SETS, CUBE and ROLLUP; FILTER; a function returning a set in the SELECT list; an expression computed from an aggregate; and NOT IN or ALL on a column that can be NULL."
+ },
+ {
+  "label": "F6",
+  "name": "ordered-sql",
+  "description": "Adds what needs the rows in an order: window functions – an aggregate over a window, rank, dense_rank, row_number, lag, lead, first_value – ORDER BY with LIMIT, which keeps only the first rows, and DISTINCT ON."
+ },
+ {
+  "label": "F7",
+  "name": "aggregate-values-as-data",
+  "description": "Adds putting an aggregate's value back into the query instead of returning it: grouping by it, applying DISTINCT or a set operation to it, partitioning or ordering a window by it, keeping the first rows by it, or aggregating it again. A value computed from many rows then decides which rows the answer contains."
+ },
+ {
+  "label": "F8",
+  "name": "recursion",
+  "description": "Adds WITH RECURSIVE: a table defined in terms of itself, computed by applying the definition again and again until it produces no new rows."
+ },
+ {
+  "label": "outside",
+  "name": "outside-the-levels",
+  "description": "Not a level. The query uses something no level covers, and in this corpus that is one of: a LIMIT where the query does not say which rows are kept, because there is no ORDER BY or because the order can tie; an aggregate whose value depends on the order it reads its input – string_agg, array_agg, a JSON aggregate – with no ORDER BY that settles it; a locking clause, FOR UPDATE or FOR SHARE; EXCEPT ALL; a window frame counted in rows; lag or lead at an offset other than one row; and a recursive query the levels do not cover: its recursive step subtracts rows, so the definition has no least fixpoint, or its body is not a base case unioned with a recursive case."
+ }
+]

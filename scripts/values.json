@@ -1,0 +1,104 @@
+{
+"1": {
+"DELTA": "90"
+},
+"2": {
+"SIZE": "15",
+"TYPE": "BRASS",
+"REGION": "EUROPE"
+},
+"3": {
+"SEGMENT": "BUILDING",
+"DATE": "1995-03-15"
+},
+"4": {
+"DATE": "1993-07-01"
+},
+"5": {
+"REGION": "ASIA",
+"DATE": "1994-01-01"
+},
+"6": {
+"DATE": "1994-01-01",
+"DISCOUNT": "0.06",
+"QUANTITY": "24"
+},
+"7": {
+"NATION1": "FRANCE",
+"NATION2": "GERMANY"
+},
+"8": {
+"NATION": "BRAZIL",
+"REGION": "AMERICA",
+"TYPE": "ECONOMY ANODIZED STEEL"
+},
+"9": {
+"COLOR": "green"
+},
+"10": {
+"DATE": "1993-10-01"
+},
+"11": {
+"NATION": "GERMANY",
+"FRACTION": "0.0001"
+},
+"12": {
+"SHIPMODE1": "MAIL",
+"SHIPMODE2": "SHIP",
+"DATE": "1994-01-01"
+},
+"13": {
+"WORD1": "special",
+"WORD2": "requests"
+},
+"14": {
+"DATE": "1995-09-01"
+},
+"15": {
+"DATE": "1996-01-01"
+},
+"16": {
+"BRAND": "Brand#45",
+"TYPE": "MEDIUM POLISHED",
+"SIZE1": "49",
+"SIZE2": "14",
+"SIZE3": "23",
+"SIZE4": "45",
+"SIZE5": "19",
+"SIZE6": "3",
+"SIZE7": "36",
+"SIZE8": "9"
+},
+"17": {
+"BRAND": "Brand#23",
+"CONTAINER": "MED BOX"
+},
+"18": {
+"QUANTITY": "300"
+},
+"19": {
+"QUANTITY1": "1",
+"QUANTITY2": "10",
+"QUANTITY3": "20",
+"BRAND1": "Brand#12",
+"BRAND2": "Brand#23",
+"BRAND3": "Brand#34"
+},
+"20": {
+"COLOR": "forest",
+"DATE": "1994-01-01",
+"NATION": "CANADA"
+},
+"21": {
+"NATION": "SAUDI ARABIA"
+},
+"22": {
+"I1": "13",
+"I2": "31",
+"I3": "23",
+"I4": "29",
+"I5": "30",
+"I6": "18",
+"I7": "17"
+}
+}
