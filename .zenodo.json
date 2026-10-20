@@ -1,0 +1,21 @@
+{
+  "title": "SQL Fragment Corpus",
+  "upload_type": "dataset",
+  "version": "1.0.0",
+  "description": "<p>13,337 SQL queries from six existing sources, each with a PostgreSQL instance it can be run against and a label placing it in a chain of SQL fragments of increasing expressiveness. The sources are the Stack Exchange Data Explorer, the SQLShare query log, dba.stackexchange.com, the BEAVER enterprise warehouse benchmark, TPC-DS and TPC-H; three of them are included here, and for the three whose terms do not permit redistribution the repository provides scripts that rebuild their queries and instances from the originals. Each scenario supplies a schema and literal rows rather than a recipe for generating them. The corpus was assembled to measure which fragment of SQL a provenance system supports; it records no result of such a measurement. The scripts are under the MIT licence.</p>",
+  "creators": [
+    {
+      "name": "Senellart, Pierre",
+      "affiliation": "DI ENS, ENS, CNRS, PSL University & Inria & Institut Universitaire de France",
+      "orcid": "0000-0002-7909-5369"
+    }
+  ],
+  "keywords": [
+    "SQL",
+    "query corpus",
+    "query log",
+    "SQL fragments",
+    "PostgreSQL"
+  ],
+  "license": "CC-BY-SA-4.0"
+}
