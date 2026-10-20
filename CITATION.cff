@@ -2,7 +2,9 @@ cff-version: 1.2.0
 title: "SQL Fragment Corpus"
 message: >-
   If you use this corpus, please cite it as below, and cite the sources used:
-  they are listed in NOTICE.md.
+  they are listed in NOTICE.md. Cite the version DOI of the release you used
+  rather than the concept DOI, so that the citation names a specific state of
+  the corpus.
 type: dataset
 version: "1.0.0"
 date-released: "2026-10-20"
@@ -14,6 +16,10 @@ authors:
     orcid: "https://orcid.org/0000-0002-7909-5369"
 repository-code: "https://github.com/PierreSenellart/sql-fragment-corpus"
 url: "https://github.com/PierreSenellart/sql-fragment-corpus"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23501789"
+    description: "Concept DOI, resolving to the latest version of the corpus"
 abstract: >-
   13,337 SQL queries from six existing sources, each with a PostgreSQL instance
   it can be run against and a label placing it in a chain of SQL fragments of

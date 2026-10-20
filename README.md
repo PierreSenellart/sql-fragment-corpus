@@ -1,5 +1,7 @@
 # SQL Fragment Corpus
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23501789-007ec6)](https://doi.org/10.5281/zenodo.23501789)
+
 13,337 SQL queries from six existing sources. Each query comes with a PostgreSQL
 instance to run it on and a label giving the SQL fragment it belongs to.
 
@@ -437,4 +439,10 @@ whole.
 
 ## Citation
 
-See `CITATION.cff`. Please also cite the sources you use; `NOTICE.md` lists them.
+Use the metadata in `CITATION.cff`, and cite the version DOI of the release you
+used rather than the concept DOI, so that the citation names a specific state of
+the corpus. Please also cite the sources you use; `NOTICE.md` lists them.
+
+| Release | Version DOI |
+| --- | --- |
+| `v1.0.0` | [10.5281/zenodo.23501790](https://doi.org/10.5281/zenodo.23501790) |
